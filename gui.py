@@ -112,10 +112,11 @@ class CSVGradeMerger:
                 matching_row = df1[df1['Short Email'] == row['SIS Login ID']]
                 if not matching_row.empty:
                     try:
-                        value = int(matching_row[column1].values[0])
+                        value = float(matching_row[column1].values[0])
                         df2.at[index, column2] = value * multiplier
                     except ValueError:
-                        pass  # If the value is not an integer, do nothing
+                        pass  # If the value is not a valid number, do nothing
+
 
             self.progress['value'] = 80
             self.root.update_idletasks()
