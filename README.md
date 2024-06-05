@@ -20,3 +20,20 @@ A Python GUI application to merge grades from two CSV files based on email and l
    ```bash
    git clone https://github.com/your-username/csv-grade-merger.git
    cd csv-grade-merger
+## Usage
+
+    Run the application:
+
+    bash
+
+    python csv_merger_with_dnd.py
+
+    Use the GUI to browse or drag-and-drop the CSV files.
+
+    Select the appropriate columns and set the multiplier value.
+
+    Click "Process" to merge the grades and save the output file.
+
+## License
+
+This project is licensed under the MIT License.
